@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About MDK Gallery | Creative Visual Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member {
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 bg-opacity-80 backdrop-blur-md fixed w-full z-10 top-0 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="./home.html"
+                class="text-2xl font-bold text-green-400 hover:text-green-500 transition-colors duration-300">
+                MDK Gallery
+            </a>
+            <div class="space-x-6">
+                <a href="./home.html" class="text-lg hover:text-green-400 transition-colors duration-300">Home</a>
+                <a href="./Projects.html"
+                    class="text-lg hover:text-green-400 transition-colors duration-300">Projects</a>
+                <a href="./about.html" class="text-lg hover:text-green-400 transition-colors duration-300">About</a>
+                <a href="./contact.html" class="text-lg hover:text-green-400 transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">About MDK Gallery</h1>
+                <p class="text-xl max-w-3xl mx-auto mb-10">We transform ideas into stunning visual experiences through
+                    creativity, technology, and passion.</p>
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full">
+                        <span class="font-semibold">15+ Years</span> of Excellence
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full">
+                        <span class="font-semibold">250+</span> Projects Completed
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full">
+                        <span class="font-semibold">98%</span> Client Satisfaction
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="w-full lg:w-1/2 fade-in">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+                            alt="MDK Gallery team collaborating" class="w-full h-auto object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <p class="text-lg font-medium">Our Creative Team</p>
+                            <p class="text-sm mt-1">Collaborating to bring visions to life</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-gray-600 mb-4 text-lg">
+                        Founded in 2008, MDK Gallery began as a small creative studio with a passion for visual
+                        storytelling. What started with just three designers has now grown into a multidisciplinary team
+                        of 30+ creative professionals.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Over the years, we've evolved from a traditional design studio into a full-service creative
+                        agency, embracing new technologies while staying true to our core values of creativity, quality,
+                        and client collaboration. Our journey has taken us from local projects to international
+                        campaigns, working with brands across 15 countries.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-green-100 text-green-800 px-4 py-3 rounded-lg font-medium stat-card">
+                            <div class="text-2xl font-bold">15+</div>
+                            <div class="text-sm">Years Experience</div>
+                        </div>
+                        <div class="bg-blue-100 text-blue-800 px-4 py-3 rounded-lg font-medium stat-card">
+                            <div class="text-2xl font-bold">250+</div>
+                            <div class="text-sm">Projects Completed</div>
+                        </div>
+                        <div class="bg-purple-100 text-purple-800 px-4 py-3 rounded-lg font-medium stat-card">
+                            <div class="text-2xl font-bold">30+</div>
+                            <div class="text-sm">Team Members</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+                <div class="w-full lg:w-1/2 fade-in">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-2xl overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=700&q=80"
+                                alt="Creative workspace at MDK Gallery" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="mt-12">
+                            <div class="rounded-2xl overflow-hidden shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=500&q=80"
+                                    alt="Team brainstorming session" class="w-full h-full object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Creative Approach</h2>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        At MDK Gallery, we believe that exceptional design is born from the perfect blend of creativity,
+                        strategy, and technology. Our process is collaborative, iterative, and always focused on
+                        delivering results that exceed expectations.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-2 mr-4 mt-1 flex-shrink-0">
+                                <i class="fas fa-lightbulb text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Discovery & Strategy</h3>
+                                <p class="text-gray-600 mt-1">We begin by deeply understanding your brand, audience, and
+                                    objectives to create a strategic foundation.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-2 mr-4 mt-1 flex-shrink-0">
+                                <i class="fas fa-pencil-alt text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Creative Exploration</h3>
+                                <p class="text-gray-600 mt-1">Our team explores multiple creative directions, pushing
+                                    boundaries while staying aligned with your vision.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-2 mr-4 mt-1 flex-shrink-0">
+                                <i class="fas fa-code text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Execution & Refinement</h3>
+                                <p class="text-gray-600 mt-1">We bring concepts to life with precision, using the latest
+                                    tools and technologies while maintaining quality.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="./contact.html"
+                        class="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                        Start Your Project
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">These principles guide everything we do at MDK
+                    Gallery</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl text-center fade-in">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Passion for Creativity</h3>
+                    <p class="text-gray-600">We're driven by our love for design and our commitment to pushing creative
+                        boundaries in every project.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl text-center fade-in">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Collaborative Partnership</h3>
+                    <p class="text-gray-600">We view our clients as creative partners, working together to achieve
+                        exceptional results.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl text-center fade-in">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Innovation & Excellence</h3>
+                    <p class="text-gray-600">We continuously explore new technologies and methodologies to deliver
+                        cutting-edge solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold mb-4">Meet Our Leadership</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">The creative minds driving MDK Gallery forward</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-2xl overflow-hidden team-member fade-in">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+                        alt="Michael Dawson" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Michael Dawson</h3>
+                        <p class="text-green-400 mb-4">Founder & Creative Director</p>
+                        <p class="text-gray-300">With over 18 years in the industry, Michael leads our creative vision
+                            and ensures every project meets our high standards.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-2xl overflow-hidden team-member fade-in">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+                        alt="Danielle Kim" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Danielle Kim</h3>
+                        <p class="text-green-400 mb-4">Head of Design</p>
+                        <p class="text-gray-300">Danielle oversees our design team, bringing innovative concepts to life
+                            with her exceptional eye for detail.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-2xl overflow-hidden team-member fade-in">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+                        alt="Kevin Miller" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Kevin Miller</h3>
+                        <p class="text-green-400 mb-4">Technical Director</p>
+                        <p class="text-gray-300">Kevin ensures our technical execution is flawless, bridging the gap
+                            between creative vision and technical implementation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 fade-in">
+                <a href="./contact.html"
+                    class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                    View Full Team
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h2 class="text-3xl font-bold mb-6">Ready to Bring Your Vision to Life?</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">Let's collaborate to create something extraordinary. Our team is
+                ready to transform your ideas into stunning visual experiences.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="./contact.html"
+                    class="bg-white text-indigo-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition duration-300">
+                    Start a Project
+                </a>
+                <a href="./projects.html"
+                    class="bg-transparent border-2 border-white text-white hover:bg-white hover:bg-opacity-10 font-medium py-3 px-8 rounded-lg transition duration-300">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-green-400 mb-4">MDK Gallery</h3>
+                    <p class="text-gray-300">Transforming ideas into exceptional visual experiences through creativity
+                        and innovation.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./home.html" class="text-gray-300 hover:text-green-400 transition-colors">Home</a>
+                        </li>
+                        <li><a href="./projects.html"
+                                class="text-gray-300 hover:text-green-400 transition-colors">Projects</a></li>
+                        <li><a href="./about.html"
+                                class="text-gray-300 hover:text-green-400 transition-colors">About</a></li>
+                        <li><a href="./contact.html"
+                                class="text-gray-300 hover:text-green-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-green-400 transition-colors">Brand Design</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-green-400 transition-colors">Web Development</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-green-400 transition-colors">UI/UX Design</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-green-400 transition-colors">Digital
+                                Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-green-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-green-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-green-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-green-400 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-gray-300">hello@mdkgallery.com</p>
+                    <p class="text-gray-300">+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 MDK Gallery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            const fadeInOnScroll = function () {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+
+            // Check on load
+            fadeInOnScroll();
+
+            // Check on scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+        });
+    </script>
+</body>
+
+</html>
