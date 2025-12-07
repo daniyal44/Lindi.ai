@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Business Card</title>
+    <style>
+        :root {
+            --editor-bg: #1e1e1e;
+            --toolbar-bg: #252526;
+            --text-primary: #d4d4d4;
+            --accent-blue: #569cd6;
+            --accent-orange: #ce9178;
+            --accent-green: #6a9955;
+            --window-red: #ff5f56;
+            --window-yellow: #ffbd2e;
+            --window-green: #27c93f;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #2d2d30, #3e3e42);
+            font-family: 'Fira Code', monospace;
+        }
+
+        .card-container {
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .business-card {
+            width: 600px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            transform: rotate3d(0.5, 1, 0, 15deg);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .business-card:hover {
+            transform: rotate3d(0.2, 0.5, 0, 8deg);
+        }
+
+        .editor-window {
+            background: var(--editor-bg);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .window-controls {
+            display: flex;
+            padding: 12px;
+            gap: 8px;
+            background: #323233;
+        }
+
+        .control {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+
+        .window-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffffff80;
+            font-size: 0.9em;
+        }
+
+        .toolbar {
+            display: flex;
+            gap: 15px;
+            padding: 12px;
+            background: var(--toolbar-bg);
+            border-bottom: 1px solid #000;
+        }
+
+        .toolbar-icon {
+            width: 24px;
+            height: 24px;
+            filter: invert(0.8);
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        .toolbar-icon:hover {
+            opacity: 1;
+        }
+
+        .code-content {
+            padding: 20px;
+            font-size: 0.9em;
+            line-height: 1.5;
+            color: var(--text-primary);
+            min-height: 200px;
+        }
+
+        /* Syntax Highlighting */
+        .json-key { color: var(--accent-blue); }
+        .json-string { color: var(--accent-orange); }
+        .json-number { color: var(--accent-green); }
+        .json-boolean { color: var(--accent-green); }
+        
+        .python-keyword { color: var(--accent-blue); }
+        .python-function { color: #dcdcaa; }
+        .python-string { color: var(--accent-orange); }
+
+        /* Hand Simulation */
+        .card-container::before {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: #f0f0f0;
+            border-radius: 20px;
+            transform: rotate(45deg) translate(-70px, 100px);
+            z-index: -1;
+            box-shadow: -10px 10px 20px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 640px) {
+            .business-card {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="business-card">
+            <div class="editor-window">
+                <div class="window-controls">
+                    <div class="control" style="background: var(--window-red)"></div>
+                    <div class="control" style="background: var(--window-yellow)"></div>
+                    <div class="control" style="background: var(--window-green)"></div>
+                    <div class="window-title">{file_name}.{file_format}</div>
+                </div>
+                <div class="toolbar">
+                    <img src="icons/file.svg" class="toolbar-icon" alt="File">
+                    <img src="icons/edit.svg" class="toolbar-icon" alt="Edit">
+                    <img src="icons/search.svg" class="toolbar-icon" alt="Search">
+                    <img src="icons/settings.svg" class="toolbar-icon" alt="Settings">
+                </div>
+                <pre class="code-content"><code>
+<span class="json-key">"Name"</span>: <span class="json-string">"Muhammad Daniyal"</span>,
+<span class="json-key">"Profession"</span>: <span class="json-number">"Mern Stack Developer"</span>,
+<span class="json-key">"Work"</span>: <span class="json-boolean">"Web Developer"</span>,
+<span class="json-key">"Website"</span>: <span class="json-string">"https://mdkworks.online"</span>,
+"</span>
+                </code></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
+
+ 
